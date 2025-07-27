@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Wishlist</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    
+  </style>
+</head>
+<body>
+    <!--Top Nav-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5">
+                <img src="Assets/download__23_-removebg-preview.png" alt="wreath" width="250" style="position: relative;">
+                <div class="text" style="position: absolute; top: 75px; left: 200px; ">
+                    <span style="font-family: Dancing Script, cursive; font-size: 30px; font-weight: 600;">Cherish</span><br>
+                    <span style="font-family: Dancing Script, cursive; font-size: 30px; font-weight: 600; margin-left: 20px;">By</span><br>
+                    <span class="ribbon1" style="color: green; font-size: 8px; letter-spacing: 2px;">Wedding</span>
+                    <span class="ribbon2" style="color: green; font-size: 8px; letter-spacing: 2px;">Cards</span>
+                </div>
+                <div class="text" style="position: absolute; top: 75px; left: 300px;">
+                    <span style="font-family: Dancing Script, cursive; font-size: 30px; font-weight: 600; margin-left: 80px;">Wed</span><br>
+                    <span style="font-family: Dancing Script, cursive; font-size: 30px; font-weight: 600; margin-left: 100px;">Knot</span><br>
+                    <span style="font-family: Dancing Script, cursive; font-size: 30px; font-weight: 600; margin-left: 120px;">Craft</span><br>
+                </div>
+            </div>
+            <div class="col-md-7 my-5 py-5">
+                <div class="d-flex mx-5">
+                    <div class="search-bar mx-5">
+                    <a href="#">
+                    <input type="text" placeholder="Search...">
+                    <i class="bi bi-search"></i>
+                    </a>   
+                    </div>
+                    <div class="nav-icon mx-4 my-2">
+                        <a href="login.html">
+                            <i class="fa-solid fa-user" style="font-size: 30px;"></i>
+                        </a>
+                    </div>
+                    <div class="nav-icon mx-4 my-2">
+                        <a href="wishlist.html"> <i class="fa-regular fa-heart" style="font-size: 30px;"></i></a>
+                       </div>
+                    <div class="nav-icon mx-4 my-2">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#cartModal">
+                            <i class="fa-solid fa-cart-shopping" style="font-size: 30px;"></i>
+                        </a>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 🛒 Modal -->
+<div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="cartModalLabel">Cart Summary</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+
+        <!-- 📦 Cart Content -->
+        <div class="container">
+          <!-- Table Header -->
+          <div class="row fw-bold border-bottom pb-2 mb-3">
+            <div class="col-md-4">Product</div>
+            <div class="col-md-2 text-center">Qty</div>
+            <div class="col-md-2 text-center">Unit Price</div>
+            <div class="col-md-2 text-center">Tax</div>
+            <div class="col-md-2 text-end">Price</div>
+          </div>
+
+          <!-- Product Row -->
+          <div class="row align-items-center mb-3">
+            <div class="col-md-4">
+              <div class="product-info">
+                SKU: KSN0054<br>
+                SN (SN 54)
+              </div>
+            </div>
+            <div class="col-md-2 text-center">2</div>
+            <div class="col-md-2 text-center">Rs.65.00</div>
+            <div class="col-md-2 text-center">18%</div>
+            <div class="col-md-2 text-end">Rs.130.00</div>
+          </div>
+
+          <hr>
+
+          <!-- Totals -->
+          <div class="row justify-content-end">
+            <div class="col-md-5">
+              <div class="d-flex justify-content-between">
+                <span class="summary-text">Sub Total:</span>
+                <span class="fw-medium">Rs.130.00</span>
+              </div>
+              <div class="d-flex justify-content-between">
+                <span class="summary-text">Total Tax:</span>
+                <span class="fw-medium">Rs.23.40</span>
+              </div>
+              <div class="d-flex justify-content-between">
+                <span class="summary-text fw-bold">Total:</span>
+                <span class="fw-bold">Rs. 153.40</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Alert Message -->
+          <div class="alert-message my-4">
+            TO CHECKOUT PLEASE ADD MINIMUM 100 ITEMS TO THE CART
+          </div>
+
+          <!-- Buttons -->
+          <div class="d-flex justify-content-center gap-3">
+            <a href="index.html"><button class="btn btn-warning px-4 shadow-sm">Continue Shopping</button></a>
+            
+            <button class="btn btn-secondary px-4 shadow-sm" disabled>Checkout</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!--Navbar-->
+    <div class="container-fluid my-5">
+        <div class="menu_links text-center">
+            <a class="mx-2" href="index.html">Home</a>
+            <a class="mx-2" href="wedding_invitation.html">Wedding Invitation</a>
+            <a class="mx-2 dropdown" href="special_occasion.html" id="specialOccasions" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Special Occasions</a>
+            <ul class="dropdown-menu" aria-labelledby="specialOccasions" style="background-color:#FFE5B4;">
+            <li><a class="dropdown-item" href="#">Birthday Invitations</a></li>
+            <li><a class="dropdown-item" href="#">Puberty Cards</a></li>
+            <li><a class="dropdown-item" href="#">Luxury Invitations</a></li>
+            <li><a class="dropdown-item" href="#">Ear Boring Cards</a></li>
+            <li><a class="dropdown-item" href="#">Engagement Cards</a></li>
+            <li><a class="dropdown-item" href="#">House Warming</a></li>
+            <li><a class="dropdown-item" href="#">Anniversary Cards</a></li>
+          </ul>
+            <a class="mx-2 dropdown" href="theme_cards.html" id="themeCards" role="button" data-bs-toggle="dropdown" aria-expanded="false">Theme Cards</a>
+            <ul class="dropdown-menu" aria-labelledby="themeCards" style="background-color: #FFE5B4;">
+            <li><a class="dropdown-item" href="#">Beach Theme Cards</a></li>
+            <li><a class="dropdown-item" href="#">Bird Theme Cards</a></li>
+            <li><a class="dropdown-item" href="#">Box Cards</a></li>
+            <li><a class="dropdown-item" href="#">Single Sheet Cards</a></li>
+          </ul>
+            <a class="mx-2 dropdown" href="scroll_invitation.html" id="scroll" role="button" data-bs-toggle="dropdown" aria-expanded="false">Scroll Invitation</a>
+            <ul class="dropdown-menu" aria-labelledby="scroll" style="background-color: #FFE5B4;">
+            <li><a class="dropdown-item" href="#">Small Size Scroll</a></li>
+            <li><a class="dropdown-item" href="#">Box Scroll</a></li>
+            <li><a class="dropdown-item" href="#">Only Scroll</a></li>
+            <li><a class="dropdown-item" href="#">High End Scroll</a></li>
+          </ul>
+            <a class="mx-2 dropdown" href="digital_invitation.html" id="digtial" role="button" data-bs-toggle="dropdown" aria-expanded="false">Digital Invitation</a>
+            <ul class="dropdown-menu" aria-labelledby="digital" style="background-color: #FFE5B4;">
+            <li><a class="dropdown-item" href="#">Whatsapp Cards</a></li>
+            <li><a class="dropdown-item" href="#">Save the date Cards</a></li>
+          </ul>
+        </div>
+    </div>
+
+    <div class="container-fluid my-5">
+    <h1 class="h3 fw-bold m-2 mb-5">Wishlist</h1>
+  <div class="row card-wrapper">
+    <!-- Card 1 -->
+    <div class="col-md-3 col-sm-6 mb-5">
+      <a href="blue_wedding_card.html">
+        <div class="product-card" style="background-color: #FFFFF0;">
+        <div class="wishlist-icon">♡</div>
+        <img src="Assets/Minimal_Blue_White_Floral_Islamic_Muslim_Wedding_I_Invitation___Zazzle-removebg-preview.png" alt="Blue Wedding Card" class="product-img">
+        <div class="product-info" style="background-color: #FFFFFF;">
+          <div class="product-title">The blue Wedding Cards</div>
+          <div class="product-price">Rs. 72.25</div>
+        </div>
+      </div>
+      </a>
+      
+    </div>
+    </div>
+    </div>
+
+<footer class="bg p-2 footer" style="background-color: #FFE5B4">
+  <div class="container-fluid">
+    <div class="row text-center text-md-start align-items-start">
+
+      <!-- Logo and Social Media -->
+      <div class="col-md-3 mb-4 my-5" style="position: relative;">
+        <img src="Assets/download__23_-removebg-preview.png" alt="Wed Knot Craft Logo" class="img-fluid mb-2" >
+        <div class="text wreath-1" style="position: absolute; top: 100px; left: 55px;">
+        <span style="font-family: Dancing Script, cursive; font-size: 25px; font-weight: 600; margin-left: 80px;">Wed</span><br>
+        <span style="font-family: Dancing Script, cursive; font-size: 25px; font-weight: 600; margin-left: 100px;">Knot</span><br>
+        <span style="font-family: Dancing Script, cursive; font-size: 25px; font-weight: 600; margin-left: 120px;">Craft</span><br>
+        </div>
+        
+        <p class="fw-bold text-center">Largest Wedding Cards Collections in Chennai</p>
+        <div class="d-flex justify-content-center justify-content-md-start gap-2">
+        <p class="mt-3 mb-1 fw-bold">Follow us with</p>
+          <a href="#"><img src="Assets/instagram.jfif" alt="Instagram" width="40"></a>
+          <a href="#"><img src="Assets/facebook.png" alt="Facebook" width="50"></a>
+          <a href="#"><img src="Assets/youtub.webp" alt="YouTube" width="30"></a>
+          <a href="#"><img src="Assets/WhatsApp.svg.webp" alt="WhatsApp" width="30"></a>
+        </div>
+      </div>
+
+      <!-- Information -->
+      <div class="col-md-3 mb-4 my-5">
+        <h5 class="fw-bold mb-4" style="font-size: 35px;">Information</h5>
+        <ul class="list-unstyled" style="font-size: 20px;">
+          <li class="mb-3"><a href="about.html" class="text-dark text-decoration-none">About Us</a></li>
+          <li class="mb-3"><a href="contact.html" class="text-dark text-decoration-none">Contact Us</a></li>
+          <li class="mb-3"><a href="faq.html" class="text-dark text-decoration-none">FAQ</a></li>
+          <li class="mb-3"><a href="howtoorder.html" class="text-dark text-decoration-none">How to order wedding invitation online?</a></li>
+        </ul>
+      </div>
+
+      <!-- Quick Access -->
+      <div class="col-md-3 mb-4 my-5">
+        <h5 class="fw-bold" style="font-size: 35px;">Quick Access</h5>
+        <ul class="list-unstyled" style="font-size: 20px;">
+          <li class="mb-3"><a href="index.html" class="text-dark text-decoration-none">Home</a></li>
+          <li class="mb-3"><a href="wedding_invitation.html" class="text-dark text-decoration-none">Wedding Cards</a></li>
+          <li class="mb-3"><a href="hindu_wedding_cards.html" class="text-dark text-decoration-none">Hindu Wedding Cards</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="col-md-3 mb-4 my-5" style="font-size: 20px;">
+        <h5 class="fw-bold" style="font-size: 35px;">Contact Us</h5>
+        <p class="mb-3"><i class="bi bi-telephone me-2"></i> +91 9876543210</p>
+        <p class="mb-3"><i class="bi bi-envelope me-2"></i> wedtype@weddingcards.com</p>
+        <p class="mb-3">Operating hours: 10.00Am to 10.00Pm</p>
+        <p class="fw-bold mb-0">Monday - Sunday</p>
+      </div>
+    </div>
+
+    <!-- Footer bottom -->
+    <div class="border-top pt-3 mt-4 text-center">
+      <p class="mb-0">
+        <i class="bi bi-c-circle me-1"></i>
+        Wed Knot Craft India Private Limited. All Rights Reserved.
+      </p>
+    </div>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>    
+</body>
+</html>
